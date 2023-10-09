@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    margin: 2rem auto;
+}
+
+.navbar-links-container a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.navbar-links-container a:hover {
+    color: rgb(77, 43, 17);
+}
+
+.primary-button {
+    padding: 0.9rem 1.75rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.navbar-cart-icon {
+    font-size: 1.15rem;
+}
+
+.primary-button:hover {
+    background-color: rgb(234, 234, 234);
+    color: rgb(77, 43, 17);
+}
+
+.navbar-menu-container svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.alert {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 2.2rem !important;
+    font-weight: 600;
+    transition: 0.2s;
+}

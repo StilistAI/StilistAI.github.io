@@ -1,0 +1,45 @@
+.team-container {
+    margin: 20rem 0;
+    width: 100vw;
+    position: relative;
+}
+
+.team-members-container {
+    margin: 2rem auto;
+    width: 70%;
+}
+
+.team-members-container h1 {
+    font-size: 3.4rem;
+    color: #E5786D;
+    text-align: center;
+    padding: 1.6rem;
+}
+
+.team-members-container p {
+    font-size: 2.2rem;
+    color: #797979;
+    text-align: center;
+}
+
+.team-background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.team-card-holder-col1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 4rem auto;
+}
+
+.team-card-holder-col2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 2rem auto;
+}
+

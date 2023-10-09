@@ -1,0 +1,24 @@
+.team-card {
+    width: 30rem;
+    margin: auto;
+}
+
+.team-card-icon-holder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-icon {
+    width: 50px;
+}
+
+.team-name-txt {
+    color: rgb(68,68,68) !important;
+}
+
+.team-role-txt {
+    font-size: 1.8rem !important;
+}

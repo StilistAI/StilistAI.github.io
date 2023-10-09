@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    font-size: 1.6rem;
+    color: rgb(76,76,76);
+    padding: 2rem;
+    margin: 12rem 0 0 0;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0.7rem;
+}
+
+footer a {
+    color: rgb(76,76,76);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-icon {
+    margin: 0.5rem;
+    font-size: 2rem;
+}

@@ -1,0 +1,40 @@
+.reports-card-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 20%;
+    padding: 2rem;
+    margin: 2rem;
+    min-height: 600px;
+    align-items: center;
+    box-shadow: 4px 4px 4px 6px rgba(39, 37, 37, 0.1);
+}
+
+.reports-card-container h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #505050;
+    margin: 1.6rem 0;
+}
+
+.reports-card-container p {
+    font-size: 1.8rem;
+    color: #474747;
+    margin: 1.6rem 0;
+    height: 14rem;
+}
+
+.reports-button {
+    padding: 1rem 2.5rem;
+    background-color: #cabfbd;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
