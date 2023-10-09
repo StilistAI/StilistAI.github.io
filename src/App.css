@@ -25,3 +25,7 @@ body {
   font-size: 62.5% !important;
   background-color: #f6f6f6;
 }
+
+html {
+  scroll-behavior: smooth;
+}

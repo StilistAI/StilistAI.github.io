@@ -8,7 +8,7 @@ import '../styles/TeamCard.css';
 import { IconButton } from '@mui/material';
 import ceren from '../assets/ceren.jpeg';
 import alp from '../assets/alp.jpeg';
-import deniz from '../assets/deniz.jpg';
+import deniz from '../assets/deniz.jpeg';
 import aliemir from '../assets/aliemir.jpeg';
 import kagan from '../assets/kagan.jpg';
 
