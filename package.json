@@ -2,7 +2,7 @@
   "name": "capsule-layout-page",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://algroitma-arkadaslari.github.io/capsule-landing-page",
+  "homepage": "https://algroitma-arkadaslari.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
