@@ -14,7 +14,7 @@ function Home() {
     return (
         <div>
             <div className="home-bannerImage-container">
-                <img src={BannerBackground} alt="" />
+                <img src={BannerBackground} alt="" className="home-image-section"/>
             </div>
             <div className="home-container">
                 <Navbar />

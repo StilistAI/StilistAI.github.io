@@ -31,14 +31,14 @@
 }
 
 .primary-heading {
-    font-size: 3.4rem;
+    font-size: 3rem;
     color: #444444;
-    max-width: 765px;
+    max-width: 500px;
 }
 
 .primary-text {
-    font-size: 2rem;
-    max-width: 836px;
+    font-size: 1.6rem;
+    max-width: 600px;
     color: #828282;
     margin: 1.5rem 0rem;
     line-height: 2.8rem;
@@ -51,7 +51,7 @@
     outline: none;
     border: none;
     border-radius: 5rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     cursor: pointer;
     font-weight: 600;
     color: white;

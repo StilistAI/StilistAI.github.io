@@ -13,7 +13,7 @@ function Team() {
         
         <div className='team-container'>
             <div className='team-background-container'>
-                <img src={TeamBackground} alt="" />
+                <img src={TeamBackground} alt="" className='team-background-img'/>
             </div>
             <div className='team-members-container' id='team'>
                 <h1>Meet the Team</h1>

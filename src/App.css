@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif;
+  font-size: 62.5%;
 }
 
 img {
@@ -21,6 +22,6 @@ img {
 body {
   max-width: 100%;
   overflow-x: hidden;
-  font-size: 62.5%;
+  font-size: 62.5% !important;
   background-color: #f6f6f6;
 }

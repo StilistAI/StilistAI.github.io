@@ -1,3 +1,5 @@
+import "../styles/ReportsCard.css";
+
 type ReportsCardProps = {
     name: string;
     link: string;
