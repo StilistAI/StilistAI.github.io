@@ -3,7 +3,6 @@ import Logo from '../assets/logo.svg';
 import HomeIcon from '@mui/icons-material/Home';
 import GroupsIcon from '@mui/icons-material/Groups';
 import SummarizeIcon from '@mui/icons-material/Summarize';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
 import { HiOutlineBars3 } from 'react-icons/hi2';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';

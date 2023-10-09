@@ -1,11 +1,9 @@
-import '../styles/ReportsCard.css'
-
 type ReportsCardProps = {
     name: string;
     link: string;
     description: string;
 };
-const ReportsCard = ( {name, link, description}: ReportsCardProps) => {
+const ReportsCard = ( {name, description}: ReportsCardProps) => {
     return (
         <div className='reports-card-container'>
             <h1>{name}</h1>
