@@ -1,3 +1,10 @@
+# Deployment
+
+1. Run `npm run deploy` from your terminal.
+2. Go to the repo's settings in your browser.
+3. Write `www.capsule.style` in Custom Domain under the Pages menu.
+4. Check the `Enforce HTTPS` box if unchecked.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
