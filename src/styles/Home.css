@@ -1,24 +1,16 @@
 .home-container {
     width: 70%;
-    margin: 0rem auto;
+    margin: 0 auto;
 }
 
 .home-banner-container {
     position: relative;
     display: flex;
-    padding-top: 10rem;
-}
-
-.home-bannerImage-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -2;
+    @apply pt-4 md:pt-40;
 }
 
 .home-image-section {
-    max-width: 600px;
-    flex: 1;
+    @apply hidden lg:w-1/3 lg:block top-0 right-0 absolute -z-50;
 }
 
 .home-text-section {
@@ -27,22 +19,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 10rem;
+    @apply mb-4 md:mb-40;
 }
 
 .primary-heading {
-    font-size: 3rem;
     color: #444444;
-    max-width: 500px;
+    @apply w-full text-6xl lg:w-2/4 lg:text-5xl;
 }
 
 .primary-text {
     font-size: 1.6rem;
     max-width: 600px;
     color: #828282;
-    margin: 1.5rem 0rem;
     line-height: 2.8rem;
-    margin-bottom: 2rem;
+    margin: 1.5rem 0 2rem;
 }
 
 .secondary-button {

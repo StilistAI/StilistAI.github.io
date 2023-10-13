@@ -1,12 +1,12 @@
 .reports-card-container {
     background-color: white;
     border-radius: 10px;
-    width: 20%;
     padding: 2rem;
     margin: 2rem;
     min-height: 350px;
     align-items: center;
     box-shadow: 4px 4px 4px 6px rgba(39, 37, 37, 0.1);
+    @apply w-2/3 md:w-1/5;
 }
 
 .reports-card-container h1 {
