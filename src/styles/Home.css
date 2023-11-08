@@ -6,7 +6,7 @@
 .home-banner-container {
     position: relative;
     display: flex;
-    @apply pt-4 flex-row w-full mx-auto;
+    @apply pt-4 flex-col md:flex-row w-full mx-auto;
 }
 
 .home-image-section {
@@ -19,12 +19,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    @apply mb-4 md:mb-40 w-4/12 md:pt-40;
+    @apply mb-4 md:mb-40 w-full md:w-4/12 md:pt-40;
 }
 
 .primary-heading {
     color: #100007;
-    @apply w-8/12 text-6xl lg:text-5xl font-semibold;
+    @apply w-11/12 md:w-8/12 text-6xl lg:text-5xl font-semibold;
     line-height: 3.4rem;
 }
 
@@ -62,7 +62,7 @@
 }
 .home-primary-image-section {
     align-items: end;
-    @apply w-6/12 mx-auto md:pt-10;
+    @apply pt-20 w-full md:w-6/12 mx-auto md:pt-10;
 }
 .home-image {
     @apply h-full;
