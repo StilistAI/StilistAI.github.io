@@ -1,5 +1,5 @@
 import '../styles/Team.css';
-import TeamBackground from '../assets/team-background.png';
+import TeamBackground from '../assets/team-background.svg';
 import TeamCard from './TeamCard';
 
 function Team() {

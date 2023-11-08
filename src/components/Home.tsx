@@ -1,7 +1,8 @@
 import Navbar from "./Navbar";
 import { useState } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
-import BannerBackground from "../assets/home-banner-background.png";
+import BannerBackground from "../assets/home-banner-background.svg";
+import HomeImg from "../assets/home-img.svg";
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import "../styles/Home.css";
@@ -21,10 +22,10 @@ function Home() {
                 <div className="home-banner-container">
                     <div className="home-text-section" id="home">
                         <h1 className="primary-heading">
-                            Your Fashion Playground: Explore, Create, Showcase
+                            Your Style, Your Way, Every Day
                         </h1>
                         <p className="primary-text">
-                            We take care of the details - from weather and dress codes to your wardrobe and personal preferences. Create and share perfect outfits for every occasion, and connect with a fashion-forward community. Make fashion fun and easy with our app!
+                            Discover, plan, and analyze your outfits effortlessly with Capsule. Get personalized recommendations, coordinate with friends for special occasions, and track your daily style choices.
                         </p>
                         <button className="secondary-button" onClick={handleOpen}>
                             Download Now <FiArrowRight />{" "}
@@ -35,6 +36,9 @@ function Home() {
                                 Coming Soon!
                             </Alert>
                         </Snackbar>
+                    </div>
+                    <div className="home-primary-image-section">
+                        <img src={HomeImg} alt={""} className={"home-image"}/>
                     </div>
                 </div>
             </div>

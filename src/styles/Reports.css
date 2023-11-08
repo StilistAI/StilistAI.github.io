@@ -1,6 +1,6 @@
 .reports-container {
     width: 70%;
-    margin: 4rem auto;
+    margin: 2rem auto;
 }
 
 .reports-cards-container {
@@ -15,14 +15,14 @@
 
 .reports-container h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 2rem;
-    color: #4C4C4C;
+    color: rgba(16, 0, 7, 0.9);
     text-align: center;
 }
 
 .reports-container p {
     font-size: 1.6rem;
-    color: #797979;
+    color: rgba(16, 0, 7, 0.7);
     text-align: center;
 }

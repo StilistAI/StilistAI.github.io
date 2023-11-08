@@ -11,14 +11,14 @@
 
 .team-members-container h1 {
     font-size: 3rem;
-    color: #E5786D;
+    color: rgba(16, 0, 7, 0.9);
     text-align: center;
     padding: 1.6rem;
 }
 
 .team-members-container p {
     font-size: 1.6rem;
-    color: #797979;
+    color: rgba(16, 0, 7, 0.7);
     text-align: center;
 }
 
