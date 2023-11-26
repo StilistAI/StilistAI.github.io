@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import BannerBackground from "../assets/home-banner-background.svg";
 import HomeImg from "../assets/home-img.svg";
+import partner1 from "../assets/microsofpartner.png";
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import "../styles/Home.css";
@@ -30,6 +31,10 @@ function Home() {
                         <button className="secondary-button" onClick={handleOpen}>
                             Download Now <FiArrowRight />{" "}
                         </button>
+                        <h2 className="partners-heading">PARTNERS</h2>
+                        <div className="partners">
+                            <img src={partner1} alt=""/>
+                        </div>
                         <Snackbar open={openModal} autoHideDuration={2000} onClose={handleClose}
                             anchorOrigin={{ vertical: 'top', horizontal: 'center' }}>
                             <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }} className='alert'>

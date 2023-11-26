@@ -21,7 +21,16 @@
     align-items: flex-start;
     @apply mb-4 md:mb-40 w-full md:w-4/12 md:pt-40;
 }
+.partners {
+    @apply flex flex-row pb-4;
+}
+.partners img {
+    width: 140px;
+}
 
+.partners-heading {
+    @apply text-xl font-semibold text-gray-700 pt-12 pb-4;
+}
 .primary-heading {
     color: #100007;
     @apply w-11/12 md:w-8/12 text-6xl lg:text-5xl font-semibold;
