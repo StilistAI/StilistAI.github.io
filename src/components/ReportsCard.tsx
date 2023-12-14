@@ -1,16 +1,20 @@
 import "../styles/ReportsCard.css";
+import analysis from "../assets/analysis.pdf";
+import specification from "../assets/specification.pdf";
 
 type ReportsCardProps = {
     name: string;
-    link: string;
     description: string;
+    id: string;
 };
-const ReportsCard = ( {name, description}: ReportsCardProps) => {
+const ReportsCard = ({name, description, id}: ReportsCardProps) => {
     return (
         <div className='reports-card-container'>
             <h1>{name}</h1>
             <p>{description}</p>
-            <button className='reports-button' disabled>Download</button>
+            <a className='reports-button' download={`${name}.pdf`} href={id==="analysis" ? analysis : specification}>
+                Download
+            </a>
         </div>
     );
 };
