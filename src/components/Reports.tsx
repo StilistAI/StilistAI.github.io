@@ -25,7 +25,7 @@ const Reports: React.FC = () => {
             <h1 id='reports'>Logbooks</h1>
             <p>Please request permission to read each member's logbook</p>
             <div className="logbookDiv">
-                {members.map((member, index) => (
+                {members.map((member) => (
                         <Member name={member.name} link={member.link} />
                 ))}
             </div>
