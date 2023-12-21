@@ -30,17 +30,16 @@
 .logbookText {
     font-size: 1.6rem;
     color: rgba(16, 0, 7, 0.7);
-    margin: 1.6rem 0;
     height: 14rem;
+    width: 80%;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.logbookText:hover {
+    font-weight: 700;
 }
 
 .logbookDiv {
-    transition: 0.3s;
-    margin: 2rem;
-    padding: 1rem;
-    border-radius: 12px;
-}
-
-.logbookDiv:hover {
-    background-color: #B1DDF1;
+    @apply grid md:grid-cols-5 gap-4 mx-auto align-middle text-center pt-10 mt-10 grid-cols-3;
 }

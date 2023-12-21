@@ -24,14 +24,10 @@ const Reports: React.FC = () => {
             </div>
             <h1 id='reports'>Logbooks</h1>
             <p>Please request permission to read each member's logbook</p>
-            <div style={{ textAlign: 'center', marginTop: '50px' }}>
-                <ul style={{ listStyle: 'none', padding: 0, display: 'flex', justifyContent: 'center' }}>
-                    {members.map((member, index) => (
-                        <li key={index} style={{ margin: '0 10px' }}>
-                            <Member name={member.name} link={member.link} />
-                        </li>
-                    ))}
-                </ul>
+            <div className="logbookDiv">
+                {members.map((member, index) => (
+                        <Member name={member.name} link={member.link} />
+                ))}
             </div>
         </div>
     );
@@ -44,11 +40,9 @@ interface MemberProps {
 
 const Member: React.FC<MemberProps> = ({ name, link }) => {
     return (
-        <div className="logbookDiv">
             <a className="logbookText"  href={link} target="_blank" rel="noopener noreferrer">
                 {name}'s <br/>Logbook
             </a>
-        </div>
     );
 };
 
