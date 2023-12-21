@@ -25,7 +25,7 @@
 
 .reports-button {
     padding: 1rem 2.5rem;
-    background-color: #B1DDF1;
+    background-color: rgba(229, 120, 109, 1);
     outline: none;
     border: none;
     border-radius: 5rem;
@@ -36,5 +36,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: auto;
+}
+
+.reports-button:hover {
+    background-color: rgb(208, 106, 96);
+    cursor: pointer;
 }

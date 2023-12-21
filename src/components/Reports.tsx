@@ -4,8 +4,15 @@ import ReportsCard from './ReportsCard';
 
 const Reports: React.FC = () => {
     const reports = [
-        {name: 'Project Specifications Report', description: 'Coming soon!', id: "specification"},
-        {name: 'Analysis and Requirements Report', description: 'Coming soon!', id: "analysis"},];
+        {name: 'Project Specifications Report', description: 'Download to view!', id: "specification"},
+        {name: 'Analysis and Requirements Report', description: 'Download to view!', id: "analysis"},];
+    const members = [
+        { name: 'Ceren', link: 'https://docs.google.com/document/d/1zijwHyt-p3nc3uJbLLPQMeetxNT6oTEWvPZMdQt4OZo/edit?usp=sharing' },
+        { name: 'Deniz', link: 'https://docs.google.com/document/d/1MvqxrUrUzTGOER6NLU6nJOSYaigz77fBWvIy_wzEh1c/edit?usp=sharing' },
+        { name: 'Kağan', link: 'https://example.com/member3' },
+        { name: 'Ali Emir', link: 'https://example.com/member4' },
+        { name: 'Alp', link: 'https://example.com/member5' },
+    ];
     return (
         <div className='reports-container'>
             <h1 id='reports'>Reports</h1>
@@ -15,9 +22,36 @@ const Reports: React.FC = () => {
                     <ReportsCard key={index} name={report.name} description={report.description} id={report.id}/>
                 ))}
             </div>
+            <h1 id='reports'>Logbooks</h1>
+            <p>Please request permission to read each member's logbook</p>
+            <div style={{ textAlign: 'center', marginTop: '50px' }}>
+                <ul style={{ listStyle: 'none', padding: 0, display: 'flex', justifyContent: 'center' }}>
+                    {members.map((member, index) => (
+                        <li key={index} style={{ margin: '0 10px' }}>
+                            <Member name={member.name} link={member.link} />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
+};
 
+interface MemberProps {
+    name: string;
+    link: string;
+}
+
+const Member: React.FC<MemberProps> = ({ name, link }) => {
+    return (
+        <div className="logbookDiv">
+            <a className="logbookText"  href={link} target="_blank" rel="noopener noreferrer">
+                {name}'s <br/>Logbook
+            </a>
         </div>
     );
 };
 
 export default Reports;
+
+
