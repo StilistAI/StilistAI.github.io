@@ -10,7 +10,7 @@ const Reports: React.FC = () => {
         { name: 'Ceren', link: 'https://docs.google.com/document/d/1zijwHyt-p3nc3uJbLLPQMeetxNT6oTEWvPZMdQt4OZo/edit?usp=sharing' },
         { name: 'Deniz', link: 'https://docs.google.com/document/d/1MvqxrUrUzTGOER6NLU6nJOSYaigz77fBWvIy_wzEh1c/edit?usp=sharing' },
         { name: 'Kağan', link: 'https://example.com/member3' },
-        { name: 'Ali Emir', link: 'https://example.com/member4' },
+        { name: 'Ali Emir', link: 'https://docs.google.com/document/d/19AJQ6RAoBXPEsjgs5TbSWzNBDCJEllSmMoHdspvmm2s/edit?usp=sharing' },
         { name: 'Alp', link: 'https://example.com/member5' },
     ];
     return (
