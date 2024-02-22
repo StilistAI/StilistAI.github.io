@@ -1,0 +1,79 @@
+.HomePage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1rem auto auto auto;
+}
+
+.homePageTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 8rem;
+}
+
+.homePageImgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 0rem;
+}
+
+.homePageTextContainer h1 {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: Karla, sans-serif;
+    color: white;
+    padding-left: 5px;
+}
+
+.homePageTextContainer p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Karla, sans-serif;
+    color: white;
+    margin: 1rem 0;
+    width: 70%;
+    padding-left: 5px;
+}
+
+.whiteLine {
+    width: 85%;
+    height: 8px;
+    background-color: white;
+    margin: 1rem 0;
+}
+
+.homePageBtn {
+    margin-top: 20px;
+    margin-left: 0;
+    background-color: #E08590;
+    color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.homePageBtn:hover {
+    background-color: #c7727c;
+    color: white;
+}
+
+.homePageImgContainer img {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+
+.typewriter {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: Karla, sans-serif;
+    color: white;
+    padding-left: 5px;
+}

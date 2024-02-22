@@ -1,17 +1,13 @@
-import Home from './components/Home'
 import './App.css'
-import Team from './components/Team'
-import Reports from './components/Reports'
-import Footer from './components/Footer'
+import Navbar2 from "./newComponents/Navbar2.tsx";
+import MainPage2 from "./newComponents/MainPage2.tsx";
+
 
 function App() {
 
   return (
     <div className='App'>
-      <Home />
-      <Team />
-      <Reports />
-      <Footer />
+        <MainPage2 />
     </div>
 
   )
