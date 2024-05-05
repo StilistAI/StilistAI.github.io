@@ -61,6 +61,12 @@ nav {
     background-color: #FFC2C6;
 }
 
+.underlineLink {
+    border-bottom: solid 2px;
+    padding-top: 2px;
+    transition: 0s;
+}
+
 .teamPageNavbarBtn {
     background-color: #7AA385;
     color: white;
@@ -83,6 +89,14 @@ nav {
     color: white;
 }
 
+.navbarDarkLinks:hover {
+    color: #191934;
+}
+
 .navbarLightLinks {
     color: #6F4949;
+}
+
+.navbarLightLinks:hover {
+    color: #2c1a1a;
 }

@@ -36,7 +36,7 @@ function Navbar2({ selectedPage }: NavbarProps) {
                 {menuOptions.map((option, index) => {
                     return (
                         <p onClick={() => handlePageChange(option.link)} key={index} className={`navbar-link ${currentPage === 'home' || currentPage === 'team'
-                            ? 'navbarDarkLinks' : 'navbarLightLinks'}`}>{option.title}</p>
+                            ? 'navbarDarkLinks' : 'navbarLightLinks'} ${currentPage === option.link ? 'underlineLink' : ''}`}>{option.title}</p>
                     );
                 })}
                 <button className={`primary-button ${currentPage === 'home' ? 'homePageNavbarBtn' : currentPage === 'about' ? 'aboutPageNavbarBtn' : currentPage === 'team' ? 'teamPageNavbarBtn' : 'reportPageNavbarBtn'}`}>Download Now</button>
