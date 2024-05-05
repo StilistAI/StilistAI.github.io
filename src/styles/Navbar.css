@@ -9,6 +9,11 @@ nav {
 .nav-logo {
     height: 2.2rem;
 }
+.navbar-links-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
 
 .navbar-links-container a {
     margin-right: 3rem;
@@ -16,22 +21,29 @@ nav {
     color: black;
     font-size: 1.6rem;
     font-weight: 600;
+    transition: 0.2s;
 }
 
 .navbar-links-container a:hover {
-    color: rgb(77, 43, 17);
+    color: #32AFC7;
 }
 
 .primary-button {
-    padding: 0.9rem 1.75rem;
-    background-color: white;
+    padding: 1rem 2.5rem;
+    background-color: #ffffff;
     outline: none;
-    border: none;
+    border: 2px solid black;
     border-radius: 5rem;
     font-size: 1.6rem;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 300;
+    color: #000000;
     transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2.5px;
 }
 
 .navbar-cart-icon {
@@ -40,7 +52,7 @@ nav {
 
 .primary-button:hover {
     background-color: rgb(234, 234, 234);
-    color: rgb(77, 43, 17);
+    color: rgb(0, 0, 0);
 }
 
 .navbar-menu-container svg {

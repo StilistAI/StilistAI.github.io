@@ -1,9 +1,9 @@
 import Navbar from "./Navbar";
 import { useState } from 'react';
-import { FiArrowRight } from 'react-icons/fi';
-import BannerBackground from "../assets/home-banner-background.svg";
-import HomeImg from "../assets/home-img.svg";
-import partner1 from "../assets/microsofpartner.png";
+import HomeImg from "../assets/segmentation.gif";
+import frame from "../assets/iphone-frame.png";
+
+import partner1 from "../assets/microsoft.jpg";
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import "../styles/Home.css";
@@ -15,26 +15,28 @@ function Home() {
 
     return (
         <div>
-            <div className="home-bannerImage-container">
-                <img src={BannerBackground} alt="" className="home-image-section"/>
-            </div>
             <div className="home-container">
                 <Navbar />
                 <div className="home-banner-container">
                     <div className="home-text-section" id="home">
+                        <h2 className={"secondary-heading"}>YOUR FASHION PLAYGROUND</h2>
                         <h1 className="primary-heading">
-                            Your Style, Your Way, Every Day
+                            CAPSULE.
                         </h1>
-                        <p className="primary-text">
-                            Discover, plan, and analyze your outfits effortlessly with Capsule. Get personalized recommendations, coordinate with friends for special occasions, and track your daily style choices.
-                        </p>
-                        <button className="secondary-button" onClick={handleOpen}>
-                            Download Now <FiArrowRight />{" "}
-                        </button>
+                        <div className="button-groups">
+                            <button className="secondary-button" onClick={handleOpen}>
+                                DOWNLOAD
+                            </button>
+                            <button className="primary-button">
+                                ABOUT US
+                            </button>
+                        </div>
+
                         <h2 className="partners-heading">PARTNERS</h2>
                         <div className="partners">
                             <img src={partner1} alt=""/>
                         </div>
+
                         <Snackbar open={openModal} autoHideDuration={2000} onClose={handleClose}
                             anchorOrigin={{ vertical: 'top', horizontal: 'center' }}>
                             <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }} className='alert'>
@@ -42,13 +44,24 @@ function Home() {
                             </Alert>
                         </Snackbar>
                     </div>
-                    <div className="home-primary-image-section">
-                        <img src={HomeImg} alt={""} className={"home-image"}/>
+                    <div className="phone-frame-container">
+                        <img src={frame} alt="Phone Frame" className="phone-frame" />
+                            <div className="gif-container">
+                                <img src={HomeImg} alt="" className="gif" />
+                            </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
     );
 }
+
+/*
+                   <div className="home-primary-image-section">
+                       <img src={HomeImg} alt={""} className={"home-image"}/>
+                   </div>
+                   */
 
 export default Home;

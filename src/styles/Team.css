@@ -10,16 +10,22 @@
 }
 
 .team-members-container h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: rgba(16, 0, 7, 0.9);
     text-align: center;
     padding: 1.6rem;
+    color: #100007;
+    @apply font-semibold;
+    font-family: sans-serif;
+    line-height: normal;
 }
 
 .team-members-container p {
     font-size: 1.6rem;
-    color: rgba(16, 0, 7, 0.7);
     text-align: center;
+    color: #32AFC7;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 4px;
 }
 
 .team-background-container {

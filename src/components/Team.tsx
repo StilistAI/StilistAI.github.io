@@ -20,9 +20,9 @@ function Team() {
                 <img src={TeamBackground} alt="" className='team-background-img'/>
             </div>
             <div className='team-members-container' id='team'>
-                <h1>Meet the Team</h1>
+                <h1>MEET OUR TEAM</h1>
                 <p>
-                    Meet our team, Algoritma Arkadaşları
+                    ALGORİTMA ARKADAŞLARI
                 </p>
                 <div className='team-card-holder-col1'>
                     {teamMembers.slice(0, 3).map((member, index) => {

@@ -6,11 +6,11 @@
 .home-banner-container {
     position: relative;
     display: flex;
-    @apply pt-4 flex-col md:flex-row w-full mx-auto;
+    @apply pt-4 flex-col md:flex-row w-10/12 mx-auto;
 }
 
 .home-image-section {
-    @apply hidden lg:w-1/3 lg:block top-0 right-0 absolute -z-50;
+    /*@apply hidden lg:w-1/3 lg:block top-0 right-0 absolute -z-50; */
 }
 
 .home-text-section {
@@ -19,55 +19,70 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    @apply mb-4 md:mb-40 w-full md:w-4/12 md:pt-40;
+    @apply mb-4 md:mb-40 w-full md:pt-40;
 }
 .partners {
-    @apply flex flex-row pb-4;
+    @apply flex flex-row;
 }
 .partners img {
     width: 140px;
+    border-radius: 12px;
+    margin-right: 10px;
 }
 
 .partners-heading {
-    @apply text-xl font-semibold text-gray-700 pt-12 pb-4;
+    color: #000000;
+    font-family: Oswald, sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    margin: 80px 0 15px 0;
 }
 .primary-heading {
     color: #100007;
-    @apply w-11/12 md:w-8/12 text-6xl lg:text-5xl font-semibold;
-    line-height: 3.4rem;
+    @apply font-semibold;
+    font-family: sans-serif;
+    font-size: 8rem;
+    line-height: normal;
+    margin-left: 10px;
 }
 
-.primary-text {
-    font-size: 1.6rem;
-    max-width: 400px;
-    color: rgba(16, 0, 7, 0.8);
-    line-height: 2.4rem;
-    margin: 1.5rem 0 2rem;
+.secondary-heading
+{
+    color: #32AFC7;
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+.button-groups
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 15px;
 }
 
 .secondary-button {
     padding: 1rem 2.5rem;
-    background-color: #E5786D;
+    background-color: #32AFC7;
     outline: none;
     border: none;
     border-radius: 5rem;
     font-size: 1.6rem;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 300;
     color: white;
     transition: 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.secondary-button svg {
-    margin-left: 0.75rem;
-    font-size: 1.5rem;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2.5px;
 }
 
 .secondary-button:hover {
-    background-color: #d66e62;
+    background-color: #2491a6;
 }
 .home-primary-image-section {
     align-items: end;
@@ -76,3 +91,30 @@
 .home-image {
     @apply h-full;
 }
+
+.phone-frame-container {
+    position: relative;
+    display: inline-block; /* Ensures container only takes up as much space as necessary */
+}
+
+.phone-frame {
+    display: block; /* Ensure phone frame image is displayed as a block element */
+    width: 275px; /* Adjust the width of the phone frame as needed */
+    height: auto; /* Adjust the height of the phone frame as needed */
+    z-index: 999;
+}
+
+.gif-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 100%;
+    width: 250px;
+    overflow: hidden; /* Ensure GIF stays within the bounds of the phone frame */
+}
+
+.gif {
+    display: block; /* Ensure GIF is displayed as a block element */
+    width: 250px; /* Adjust the width of the GIF as needed */
+}
+
