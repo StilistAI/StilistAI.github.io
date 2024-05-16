@@ -30,6 +30,7 @@ const ReportsCard = ({name, description, id}: ReportsCardProps) => {
         <div className='reports-card-container'>
             <h1>{name}</h1>
             <p>{description}</p>
+            {id === 'final' && <br />}
             <a className='reports-button' download={`${name}.pdf`} href={file}>
                 Download
             </a>
