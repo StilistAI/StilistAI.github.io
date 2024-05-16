@@ -5,7 +5,10 @@ import ReportsCard from './ReportsCard';
 const Reports: React.FC = () => {
     const reports = [
         {name: 'Project Specifications Report', description: 'Download to view!', id: "specification"},
-        {name: 'Analysis and Requirements Report', description: 'Download to view!', id: "analysis"},];
+        {name: 'Analysis and Requirements Report', description: 'Download to view!', id: "analysis"},
+        {name: 'Detailed Design Report', description: 'Download to view!', id: "design"},
+        {name: 'Final Report', description: 'Download to view!', id: "final"}
+    ];
     const members = [
         { name: 'Ceren', link: 'https://docs.google.com/document/d/1zijwHyt-p3nc3uJbLLPQMeetxNT6oTEWvPZMdQt4OZo/edit?usp=sharing' },
         { name: 'Deniz', link: 'https://docs.google.com/document/d/1MvqxrUrUzTGOER6NLU6nJOSYaigz77fBWvIy_wzEh1c/edit?usp=sharing' },
