@@ -42,8 +42,9 @@ function Navbar() {
 
     const menuOptions = [
         { title: 'Home', Icon: HomeIcon, link: '#home' },
+        { title: 'About', Icon: SummarizeIcon, link: '#about' },
         { title: 'Team', Icon: GroupsIcon, link: '#team' },
-        { title: 'Reports', Icon: SummarizeIcon, link: '#reports' },];
+        ];
 
     return (
         <nav>
