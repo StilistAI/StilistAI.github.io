@@ -5,40 +5,39 @@ import TeamCard from './TeamCard';
 function Team() {
     const teamMembers = [
         { name: 'Ali Emir Güzey', role: 'Backend & Infrastructure', image: 'aliemir', link: 'https://www.linkedin.com/in/ali-guzey' },
-        { name: 'Alp Afyonluoğlu', role: 'Machine Learning & Backend', image: 'alp', link: 'https://www.linkedin.com/in/alpafyonluoglu' },
+        { name: 'Alp Afyonluoğlu', role: 'Machine Learning', image: 'alp', link: 'https://www.linkedin.com/in/alpafyonluoglu' },
         { name: 'Ceren Akyar', role: 'UI/UX Design & Frontend', image: 'ceren', link: 'https://www.linkedin.com/in/ceren-akyar-a477911b7' },
-        { name: 'Deniz Mert Dilaverler', role: 'Full Stack Development', image: 'deniz', link: 'https://www.linkedin.com/in/deniz-mert-dilaverler-997b271b9' },
-        { name: 'Mehmet Kağan İlbak', role: 'Machine Learning & Infrastructure', image: 'kagan', link: 'https://www.linkedin.com/in/kaganilbak' },];
+        { name: 'Mehmet Kağan İlbak', role: 'Machine Learning', image: 'kagan', link: 'https://www.linkedin.com/in/kaganilbak' },];
 
     const advisors = [
         { name: 'Asst. Prof. Hamdi Dibeklioğlu', role: 'Supervisor', image: 'hamdi', link: 'https://www.linkedin.com/in/dibeklioglu/'},
         { name: 'Dr. Ahmet Kara', role: 'Innovation Expert', image: 'ahmet', link: 'https://www.linkedin.com/in/ahmetk/'}, ];
     return (
 
-        <div className='team-container'>
+        <div className='team-container mt-0 mb-0'>
             <div className='team-background-container'>
                 <img src={TeamBackground} alt="" className='team-background-img'/>
             </div>
-            <div className='team-members-container' id='team'>
+            <div className='team-members-container pt-32 mt-0 mb-0' id='team'>
                 <h1>MEET OUR TEAM</h1>
                 <p>
-                    ALGORİTMA ARKADAŞLARI
+                    "ALGORİTMA ARKADAŞLARI"
                 </p>
-                <div className='team-card-holder-col1'>
-                    {teamMembers.slice(0, 3).map((member, index) => {
+                <div className='team-card-holder-col2'>
+                    {teamMembers.slice(0, 2).map((member, index) => {
                         return (
                             <TeamCard key={index} name={member.name} role={member.role} image={member.image} link={member.link} />
                         );
                     })}
                 </div>
                 <div className='team-card-holder-col2'>
-                    {teamMembers.slice(3, 5).map((member, index) => {
+                    {teamMembers.slice(2, 4).map((member, index) => {
                         return (
                             <TeamCard key={index} name={member.name} role={member.role} image={member.image} link={member.link} />
                         );
                     })}
                 </div>
-                <h1>Meet our Advisors</h1>
+                <h1>OUR ADVISORS</h1>
                 <div className='team-card-holder-col2'>
                     {advisors.map((member, index) => {
                         return (

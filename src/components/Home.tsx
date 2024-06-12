@@ -1,12 +1,15 @@
 import Navbar from "./Navbar";
 import { useState } from 'react';
-import HomeImg from "../assets/segmentation.gif";
-import frame from "../assets/iphone-frame.png";
-
-import partner1 from "../assets/microsoft.jpg";
-import Snackbar from '@mui/material/Snackbar';
-import Alert from '@mui/material/Alert';
+import partner1 from "../assets/microsoft.png";
+import mainImg from "../assets/heroImg.svg";
 import "../styles/Home.css";
+import {
+    Dialog,
+    DialogTitle,
+    DialogContent,
+    Link,
+    Typography,
+} from '@mui/material';
 
 function Home() {
     const [openModal, setOpenModal] = useState(false);
@@ -24,11 +27,35 @@ function Home() {
                     <h3 className="partners-heading">
                         Partnered With:
                     </h3>
+                    <div className="partners">
+                        <img src={partner1}
+                            alt="Microsoft"
+                            className="partner-image"
+                        />
+                    </div>
+                    <div className="button-holder">
+                        <button className="primary-button" onClick={handleOpen}>
+                            Download
+                        </button>
+                    </div>
                 </div>
                 <div className="home-image-section">
-
+                    <img src={mainImg} alt="" className=""/>
                 </div>
             </div>
+            <Dialog open={openModal} onClose={handleClose}>
+                <DialogTitle className="modal-title">Thank You For Your Interest!</DialogTitle>
+                <DialogContent>
+                    <Typography variant="body1" className="modal-secondary-text">
+                        The app is almost ready for launch. Please join our waitlist to be the first to know when it is available for download.
+                    </Typography>
+                    <Link href="https://lnkd.in/dkPJFTCb" target="_blank" rel="noopener" underline="hover" sx={{ display: 'block', marginTop: '16px' }} className="modal-link">
+                        <Typography variant="body1" className="modal-link">
+                            Join Our Waitlist Now
+                        </Typography>
+                    </Link>
+                </DialogContent>
+            </Dialog>
         </div>
     );
 }
