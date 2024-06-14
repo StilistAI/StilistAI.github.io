@@ -12,6 +12,7 @@ import {
     Link,
     Typography,
 } from '@mui/material';
+import { NavLink } from 'react-router-dom'; // Import useLocation
 
 
 
@@ -63,7 +64,13 @@ function Navbar() {
                 <div className='navbar-links-container'>
                     {menuOptions.map((option, index) => {
                         return (
-                            <a href={option.link} key={index} className='navbar-link'>{option.title}</a>
+                            <NavLink
+                                to={option.link}
+                                key={index}
+                                className={({ isActive }) => `navbar-link ${isActive ? 'active' : ''}`} // Apply 'active' class when the link is active
+                            >
+                                {option.title}
+                            </NavLink>
                         );
                     })}
                     <button className='primary-button' onClick={handleOpen}>Download</button>

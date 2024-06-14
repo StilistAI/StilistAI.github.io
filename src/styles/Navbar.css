@@ -1,7 +1,7 @@
 nav {
     min-height: 90px;
     width: 100%;
-    background: transparent;
+    background: rgba(248, 242, 242, 0.54);
     position: fixed;
     align-self: center;
     z-index: 1000;
@@ -36,6 +36,16 @@ nav {
 
 .navbar-links-container a:hover {
     color: #860311;
+}
+
+/* Active link styling */
+.navbar-link.active {
+    color: #860311; /* Color for the active link */
+}
+
+/* Ensure additional styles for specific conditions can be added as necessary */
+.navbar-link.active:hover {
+    color: #560707; /* Different color when hovering over the active link */
 }
 
 .navbar-cart-icon {
@@ -94,4 +104,12 @@ nav {
 
 .navbar-link-icon:hover {
     animation: scaleUp 0.2s ease forwards; /* Scale up on hover */
+}
+
+/* max width of 768px */
+@media (max-width: 800px) {
+
+    nav {
+        background: transparent;
+    }
 }

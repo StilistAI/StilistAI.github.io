@@ -19,7 +19,7 @@ function Team() {
                 <img src={TeamBackground} alt="" className='team-background-img'/>
             </div>
             <div className='team-members-container pt-32 mt-0 mb-0' id='team'>
-                <h1>MEET OUR TEAM</h1>
+                <h1 className="modal-title">MEET OUR TEAM</h1>
                 <p>
                     "ALGORİTMA ARKADAŞLARI"
                 </p>
@@ -37,7 +37,7 @@ function Team() {
                         );
                     })}
                 </div>
-                <h1>OUR ADVISORS</h1>
+                <h1 className="modal-title">OUR ADVISORS</h1>
                 <div className='team-card-holder-col2'>
                     {advisors.map((member, index) => {
                         return (
