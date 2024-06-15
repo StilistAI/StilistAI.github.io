@@ -116,6 +116,22 @@
     .home-image-section {
         display: none;
     }
+
+    .home-text-section {
+        width: 100%;
+    }
+
+    .red-line {
+        width: 95%;
+    }
+
+    .button-holder {
+        width: 95%;
+    }
+
+    .home {
+        height: 100%;
+    }
 }
 
 

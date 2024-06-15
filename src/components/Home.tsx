@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import { useState } from 'react';
 import partner1 from "../assets/microsoft.png";
 import mainImg from "../assets/heroImg.svg";

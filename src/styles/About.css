@@ -100,4 +100,8 @@
     .yellow-phone {
         display: none;
     }
+
+    .about-container {
+        padding-top: 80px;
+    }
 }

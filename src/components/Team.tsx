@@ -10,8 +10,7 @@ function Team() {
         { name: 'Mehmet Kağan İlbak', role: 'Machine Learning', image: 'kagan', link: 'https://www.linkedin.com/in/kaganilbak' },];
 
     const advisors = [
-        { name: 'Asst. Prof. Hamdi Dibeklioğlu', role: 'Supervisor', image: 'hamdi', link: 'https://www.linkedin.com/in/dibeklioglu/'},
-        { name: 'Dr. Ahmet Kara', role: 'Innovation Expert', image: 'ahmet', link: 'https://www.linkedin.com/in/ahmetk/'}, ];
+        { name: 'Asst. Prof. Hamdi Dibeklioğlu', role: 'Supervisor', image: 'hamdi', link: 'https://www.linkedin.com/in/dibeklioglu/'},];
     return (
 
         <div className='team-container mt-0 mb-0'>
@@ -37,8 +36,8 @@ function Team() {
                         );
                     })}
                 </div>
-                <h1 className="modal-title">OUR ADVISORS</h1>
-                <div className='team-card-holder-col2'>
+                <h1 className="modal-title mb-8">OUR ADVISORS</h1>
+                <div className=''>
                     {advisors.map((member, index) => {
                         return (
                             <TeamCard key={index} name={member.name} role={member.role} image={member.image} link={member.link} />

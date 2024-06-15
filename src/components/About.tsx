@@ -6,7 +6,7 @@ import outfitPhoto from '../assets/outfit.svg';
 
 function About() {
     return (
-        <div className={"about"}>
+        <div className={"about"} id={"about"}>
             <div className="about-container">
                 <h1 className="modal-title ">CAPSULE - How to Use?</h1>
                 <div className="description-container justify-start">
