@@ -22,7 +22,8 @@ function About() {
                         </p>
                         <div className="red-line-thin"></div>
                         <p>
-                            Track your outfits daily and view your wardrobe insights including the outfits you wear the most, the least, number of clothes you own and more!
+                            Track your outfits daily and view your wardrobe insights including the outfits you wear the most,
+                            the least, number of clothes you own and more!
                         </p>
                     </div>
                 </div>
@@ -30,12 +31,13 @@ function About() {
                 <div className="description-container justify-end">
                     <div className="description-text-container">
                         <p>
-                            Get daily outfit recommendations according to your style, the weather, the occasion, and your outfit preferences!
-                            <br/>Swipe right to save an outfit to your wardrobe, or swipe left to view the next outfit.
+                            Since we already know your style, shopping has never been easier!
+                            Capsule suggests clothes and outfits that match your style and you can buy them by just clicking on the items you liked!
                         </p>
                         <div className="red-line-thin"></div>
                         <p>
-                            Track your outfits daily and view your wardrobe insights including the outfits you wear the most, the least, number of clothes you own and more!
+                           Do you have the perfect dress but looking for the right shoes? Capsule can help you find the perfect match! <br/>
+                            Lock the item you want to match and Capsule will suggest the best options for you to shop!
                         </p>
                     </div>
                     <div className="phone-frame">
