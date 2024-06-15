@@ -16,7 +16,7 @@ function Home() {
     const handleClose = () => setOpenModal(false);
 
     return (
-        <div className={"home"}>
+        <div className={"home"} id={"home"}>
             <div className="home-container">
                 <div className="home-text-section">
                     <h1 className="primary-heading">CAPSULE</h1>

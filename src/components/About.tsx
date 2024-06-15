@@ -1,5 +1,6 @@
 import "../styles/About.css";
 import swipingVideo from "../assets/swipingVideo.mp4";
+import shoppingVideo from "../assets/shoppingVideo.mp4";
 import phoneFrame from '../assets/phoneFrame.png';
 import phone from '../assets/phone.png';
 import outfitPhoto from '../assets/outfit.svg';
@@ -38,7 +39,7 @@ function About() {
                         </p>
                     </div>
                     <div className="phone-frame">
-                        <video className="phone-video" src={swipingVideo} loop autoPlay muted />
+                        <video className="phone-video" src={shoppingVideo} loop autoPlay muted />
                         <img className="phone-image" src={phoneFrame} alt="Phone Frame" />
                     </div>
                 </div>

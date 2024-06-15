@@ -110,6 +110,15 @@ nav {
 @media (max-width: 800px) {
 
     nav {
-        background: transparent;
+        min-height: 0;
+        opacity: 80%;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-logo {
+        height: 50px;
     }
 }
