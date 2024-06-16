@@ -1,0 +1,107 @@
+.about-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.description-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.description-container p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #100007;
+    font-family: Karla, sans-serif;
+    margin: 0;
+    width: 90%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.red-line-thin {
+    width: 90%;
+    height: 2px;
+    background-color: #860311;
+    margin: 20px 5%;
+}
+
+.phone-frame {
+    position: relative;
+    width: 250px; /* Adjust based on your design */
+    height: 500px; /* Adjust based on your design */
+}
+
+.phone-video {
+    position: absolute;
+    top: 3%; /* Adjust based on your phone frame design */
+    left: 5%; /* Adjust based on your phone frame design */
+    width: 92%; /* Adjust to fit within the phone frame */
+    height: 95%; /* Adjust to fit within the phone frame */
+    object-fit: cover; /* Ensures the video covers the area */
+    border-radius: 25px;
+}
+
+.phone-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.yellow-phone {
+    height: 300px;
+    object-fit: cover;
+}
+
+.outfit-photo {
+    width: 160px;
+    object-fit: cover;
+
+}
+
+/* after 800 px */
+@media screen and (max-width: 800px) {
+    .description-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-text-container {
+        width: 90%;
+    }
+
+    .description-container p {
+        width: 100%;
+        padding: 5% 0;
+    }
+
+    .red-line-thin {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .yellow-phone {
+        display: none;
+    }
+
+    .about-container {
+        padding-top: 80px;
+    }
+}

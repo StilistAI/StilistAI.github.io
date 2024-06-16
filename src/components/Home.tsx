@@ -1,12 +1,14 @@
-import Navbar from "./Navbar";
 import { useState } from 'react';
-import { FiArrowRight } from 'react-icons/fi';
-import BannerBackground from "../assets/home-banner-background.svg";
-import HomeImg from "../assets/home-img.svg";
-import partner1 from "../assets/microsofpartner.png";
-import Snackbar from '@mui/material/Snackbar';
-import Alert from '@mui/material/Alert';
+import partner1 from "../assets/microsoft.png";
+import mainImg from "../assets/heroImg.svg";
 import "../styles/Home.css";
+import {
+    Dialog,
+    DialogTitle,
+    DialogContent,
+    Link,
+    Typography,
+} from '@mui/material';
 
 function Home() {
     const [openModal, setOpenModal] = useState(false);
@@ -14,39 +16,45 @@ function Home() {
     const handleClose = () => setOpenModal(false);
 
     return (
-        <div>
-            <div className="home-bannerImage-container">
-                <img src={BannerBackground} alt="" className="home-image-section"/>
-            </div>
+        <div className={"home"} id={"home"}>
             <div className="home-container">
-                <Navbar />
-                <div className="home-banner-container">
-                    <div className="home-text-section" id="home">
-                        <h1 className="primary-heading">
-                            Your Style, Your Way, Every Day
-                        </h1>
-                        <p className="primary-text">
-                            Discover, plan, and analyze your outfits effortlessly with Capsule. Get personalized recommendations, coordinate with friends for special occasions, and track your daily style choices.
-                        </p>
-                        <button className="secondary-button" onClick={handleOpen}>
-                            Download Now <FiArrowRight />{" "}
-                        </button>
-                        <h2 className="partners-heading">PARTNERS</h2>
-                        <div className="partners">
-                            <img src={partner1} alt=""/>
-                        </div>
-                        <Snackbar open={openModal} autoHideDuration={2000} onClose={handleClose}
-                            anchorOrigin={{ vertical: 'top', horizontal: 'center' }}>
-                            <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }} className='alert'>
-                                Coming Soon!
-                            </Alert>
-                        </Snackbar>
+                <div className="home-text-section">
+                    <h1 className="primary-heading">CAPSULE</h1>
+                    <h2 className="secondary-heading">Your Style. Your Way. Everyday.</h2>
+                    <div className="red-line"></div>
+                    <p className="primary-p">Capsule is your virtual wardrobe. Get outfit recommendations for every occasion, track your outfits daily and view your wardrobe usage with our app!</p>
+                    <h3 className="partners-heading">
+                        Partnered With:
+                    </h3>
+                    <div className="partners">
+                        <img src={partner1}
+                            alt="Microsoft"
+                            className="partner-image"
+                        />
                     </div>
-                    <div className="home-primary-image-section">
-                        <img src={HomeImg} alt={""} className={"home-image"}/>
+                    <div className="button-holder">
+                        <button className="primary-button" onClick={handleOpen}>
+                            Download
+                        </button>
                     </div>
                 </div>
+                <div className="home-image-section">
+                    <img src={mainImg} alt="" className=""/>
+                </div>
             </div>
+            <Dialog open={openModal} onClose={handleClose}>
+                <DialogTitle className="modal-title">Thank You For Your Interest!</DialogTitle>
+                <DialogContent>
+                    <Typography variant="body1" className="modal-secondary-text">
+                        The app is almost ready for launch. Please join our waitlist to be the first to know when it is available for download.
+                    </Typography>
+                    <Link href="https://lnkd.in/dkPJFTCb" target="_blank" rel="noopener" underline="hover" sx={{ display: 'block', marginTop: '16px' }} className="modal-link">
+                        <Typography variant="body1" className="modal-link">
+                            Join Our Waitlist Now
+                        </Typography>
+                    </Link>
+                </DialogContent>
+            </Dialog>
         </div>
     );
 }

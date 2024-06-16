@@ -2,8 +2,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f8f8;
-    color: rgb(76,76,76);
+    background-color: #864148;
+    color: rgb(255, 255, 255);
     margin: 12rem 0 0 0;
 }
 
@@ -20,7 +20,7 @@ footer p {
 }
 
 footer a {
-    color: rgb(76,76,76);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.2rem;
 }

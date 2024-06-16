@@ -1,7 +1,7 @@
 .team-container {
-    margin: 20rem 0;
     width: 100vw;
     position: relative;
+
 }
 
 .team-members-container {
@@ -10,16 +10,22 @@
 }
 
 .team-members-container h1 {
-    font-size: 3rem;
+    font-size: 4.4rem;
     color: rgba(16, 0, 7, 0.9);
     text-align: center;
-    padding: 1.6rem;
+    padding: 1.6rem 0 1rem 0;
+    color: #100007;
+    font-family: Playfair Display, serif;
+    line-height: normal;
+    font-weight: 600;
 }
 
 .team-members-container p {
-    font-size: 1.6rem;
-    color: rgba(16, 0, 7, 0.7);
+    font-size: 1.8rem;
     text-align: center;
+    color: #860311;
+    font-family: Karla, sans-serif;
+    font-weight: 500;
 }
 
 .team-background-container {

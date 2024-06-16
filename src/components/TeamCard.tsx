@@ -29,7 +29,7 @@ function TeamCard( {name, role, image, link}: TeamCardProps) {
                 src={image === 'ceren' ? ceren : image === 'alp' ? alp : image === 'deniz' ? deniz : image === 'aliemir' ? aliemir : image === 'kagan' ? kagan : image === 'hamdi' ? hamdi : ahmet }
                 title={name}
             />
-            <CardContent>
+            <CardContent className="card-content">
                 <Typography variant="body1" className='team-name-txt' >
                     {name}
                 </Typography>
@@ -39,7 +39,7 @@ function TeamCard( {name, role, image, link}: TeamCardProps) {
             </CardContent>
             <CardActions className='team-card-icon-holder'>
                 <IconButton href={link} target="_blank" rel="noopener noreferrer">
-                    <LinkedInIcon fontSize='large'/>
+                    <LinkedInIcon fontSize='large' className="linkedin-logo"/>
                 </IconButton>
             </CardActions>
         </Card>

@@ -17,15 +17,86 @@ img {
   max-width: 1900px;
   margin: 0rem auto;
   display: block;
+  background: #F8F2F2;
 }
 
 body {
   max-width: 100%;
   overflow-x: hidden;
   font-size: 62.5% !important;
-  background-color: #f6f6f6;
+  background: #F8F2F2;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.primary-button {
+  background-color: #860311;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Karla, sans-serif;
+  padding: 10px 35px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.primary-button:hover {
+  background-color: #6c020d;
+}
+
+.modal-title {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  color: #100007 !important;
+  font-family: Playfair Display, serif !important;
+  text-align: center !important;
+}
+
+.modal-secondary-text {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #100007 !important;
+  font-family: Karla, sans-serif !important;
+  text-align: center !important;
+}
+
+.modal-link {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #860311 !important;
+    font-family: Karla, sans-serif !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+.modal-link:hover {
+    color: #49040c !important;
+    text-decoration: none !important;
+}
+
+/* Custom Scrollbar for WebKit browsers (Chrome, Safari, and Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar (for horizontal scrolling) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #864148; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  border: 3px solid #f1f1f1; /* Padding around the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F2F2; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the scrollbar track */
+}
+
+/* Custom Scrollbar for Firefox */
+html {
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: #864148 #F8F2F2; /* Colors for thumb and track respectively */
 }
