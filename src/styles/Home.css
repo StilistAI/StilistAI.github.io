@@ -109,10 +109,13 @@
     }
 
     .primary-heading {
-        font-size: 80px;
-        line-height: 80px;
+        font-size: 65px;
+        line-height: 65px;
     }
 
+    .secondary-heading {
+        font-size: 16px;
+    }
     .home-image-section {
         display: none;
     }
@@ -123,6 +126,7 @@
 
     .red-line {
         width: 95%;
+        margin: 10px 0;
     }
 
     .button-holder {
@@ -132,6 +136,14 @@
     .home {
         height: 100%;
         padding-top: 30px;
+    }
+
+    .primary-p {
+        width: 95%;
+        font-size: 14px;
+    }
+    .partners-heading {
+        font-size: 16px;
     }
 }
 

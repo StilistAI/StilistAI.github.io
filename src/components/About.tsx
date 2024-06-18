@@ -12,7 +12,7 @@ function About() {
                 <h1 className="modal-title ">CAPSULE - How to Use?</h1>
                 <div className="description-container justify-start">
                     <div className="phone-frame">
-                        <video className="phone-video" src={swipingVideo} loop autoPlay muted />
+                        <video className="phone-video" src={swipingVideo}  loop autoPlay muted playsInline />
                         <img className="phone-image" src={phoneFrame} alt="Phone Frame" />
                     </div>
                     <div className="description-text-container">
@@ -41,7 +41,7 @@ function About() {
                         </p>
                     </div>
                     <div className="phone-frame">
-                        <video className="phone-video" src={shoppingVideo} loop autoPlay muted />
+                        <video className="phone-video" src={shoppingVideo} loop autoPlay muted playsInline />
                         <img className="phone-image" src={phoneFrame} alt="Phone Frame" />
                     </div>
                 </div>

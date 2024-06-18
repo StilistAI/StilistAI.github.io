@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 import Logo from '../assets/logo.svg';
 import HomeIcon from '@mui/icons-material/Home';
 import GroupsIcon from '@mui/icons-material/Groups';
@@ -22,9 +22,9 @@ function Navbar() {
     const handleClose = () => setOpenModal(false);
 
     const menuOptions = [
-        { title: 'Home', Icon: HomeIcon, link: '/home#home' },
-        { title: 'About', Icon: SummarizeIcon, link: '/home#about' },
-        { title: 'Team', Icon: GroupsIcon, link: '/team' },
+        { title: 'Home', Icon: HomeIcon, link: '#home' },
+        { title: 'About', Icon: SummarizeIcon, link: '#about' },
+        { title: 'Team', Icon: GroupsIcon, link: '#team' },
         ];
 
     const location = useLocation();
@@ -37,11 +37,11 @@ function Navbar() {
                 </div>
                 <div className='navbar-links-container'>
                     {menuOptions.map((option, index) => {
-                        const [optionPath, optionHash] = option.link.split('#');
+                        const optionHash = option.link.split('#')[1]; // Extract the hash part from option.link
                         const isActive =
-                            (location.pathname === optionPath && (!optionHash || location.hash === `#${optionHash}`)) ||
-                            // Additionally, consider root path or empty path as active for 'Home'
-                            (location.pathname === '/' && option.title === 'Home');
+                            (!optionHash && location.hash === '') || // No hash in option or current URL has no hash
+                            (optionHash && location.pathname === `/${optionHash}`) || // Hash matches for the current option
+                            (location.pathname === '/' && option.title === 'Home'); // Consider root path as active for 'Home'
 
                         return (
                             <a
@@ -62,7 +62,7 @@ function Navbar() {
                     <Typography variant="body1" className="modal-secondary-text">
                         The app is almost ready for launch. Please join our waitlist to be the first to know when it is available for download.
                     </Typography>
-                    <Link href="https://lnkd.in/dkPJFTCb" target="_blank" rel="noopener" underline="hover" sx={{ display: 'block', marginTop: '16px' }} className="modal-link">
+                    <Link href="https://forms.gle/288crQsrGPsJ5SwL8" target="_blank" rel="noopener" underline="hover" sx={{ display: 'block', marginTop: '16px' }} className="modal-link">
                         <Typography variant="body1" className="modal-link">
                             Join Our Waitlist Now
                         </Typography>

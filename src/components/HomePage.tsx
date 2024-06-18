@@ -1,12 +1,13 @@
-/* create new component consisting of home and about */
 import Home from './Home.tsx'
 import About from './About.tsx'
+import Team from "./Team.tsx";
 
 function HomePage() {
     return (
         <div>
             <Home />
             <About />
+            <Team />
         </div>
     )
 }

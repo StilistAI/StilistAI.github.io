@@ -48,7 +48,7 @@ function Home() {
                     <Typography variant="body1" className="modal-secondary-text">
                         The app is almost ready for launch. Please join our waitlist to be the first to know when it is available for download.
                     </Typography>
-                    <Link href="https://lnkd.in/dkPJFTCb" target="_blank" rel="noopener" underline="hover" sx={{ display: 'block', marginTop: '16px' }} className="modal-link">
+                    <Link href="https://forms.gle/288crQsrGPsJ5SwL8" target="_blank" rel="noopener" underline="hover" sx={{ display: 'block', marginTop: '16px' }} className="modal-link">
                         <Typography variant="body1" className="modal-link">
                             Join Our Waitlist Now
                         </Typography>
