@@ -19,10 +19,10 @@ function Home() {
         <div className={"home"} id={"home"}>
             <div className="home-container">
                 <div className="home-text-section">
-                    <h1 className="primary-heading">CAPSULE</h1>
+                    <h1 className="primary-heading">Stilist</h1>
                     <h2 className="secondary-heading">Your Style. Your Way. Everyday.</h2>
                     <div className="red-line"></div>
-                    <p className="primary-p">Capsule is your virtual wardrobe. Get outfit recommendations for every occasion, track your outfits daily and view your wardrobe usage with our app!</p>
+                    <p className="primary-p"><span className="stylish-text">Stilist</span> is your virtual wardrobe. Get outfit recommendations for every occasion, track your outfits daily and view your wardrobe usage with our app!</p>
                     <h3 className="partners-heading">
                         Partnered With:
                     </h3>

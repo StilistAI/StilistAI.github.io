@@ -9,7 +9,7 @@ function About() {
     return (
         <div className={"about"} id={"about"}>
             <div className="about-container">
-                <h1 className="modal-title ">CAPSULE - How to Use?</h1>
+                <h1 className="modal-title ">Stilist - How to Use?</h1>
                 <div className="description-container justify-start">
                     <div className="phone-frame">
                         <video className="phone-video" src={swipingVideo}  loop autoPlay muted playsInline />
@@ -32,12 +32,12 @@ function About() {
                     <div className="description-text-container">
                         <p>
                             Since we already know your style, shopping has never been easier!
-                            Capsule suggests clothes and outfits that match your style and you can buy them by just clicking on the items you liked!
+                            <span className="stylish-text" style={{fontSize: "16px"}}> Stilist</span> suggests clothes and outfits that match your style and you can buy them by just clicking on the items you liked!
                         </p>
                         <div className="red-line-thin"></div>
                         <p>
-                           Do you have the perfect dress but looking for the right shoes? Capsule can help you find the perfect match! <br/>
-                            Lock the item you want to match and Capsule will suggest the best options for you to shop!
+                           Do you have the perfect dress but looking for the right shoes? <span className="stylish-text" style={{fontSize: "16px"}}> Stilist</span> can help you find the perfect match! <br/>
+                            Lock the item you want to match and we will suggest the best options for you to shop!
                         </p>
                     </div>
                     <div className="phone-frame">
@@ -50,7 +50,7 @@ function About() {
                     <img className="yellow-phone" src={phone} alt="Phone Frame" />
                     <div className="description-text-container">
                         <p>
-                            Share what you wear with your friends and followers! Just log the outfit you wore and Capsule shares it with your followers.
+                            Share what you wear with your friends and followers! Just log the outfit you wore and <span className="stylish-text" style={{fontSize: "16px"}}> Stilist</span> shares it with your followers.
                         </p>
                         <div className="red-line-thin"></div>
                         <p>

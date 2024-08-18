@@ -4,10 +4,10 @@ const Footer = () => {
     return (
         <footer>
             <div>
-                <p>&copy; 2024 Capsule | Your Style, Your Way, Everyday.</p>
+                <p>&copy; 2024 <span className="stylish-text" style={{fontSize: "12px"}}> Stilist</span> | Your Style, Your Way, Everyday.</p>
                 <p>
                     For any inquiries, please contact {" "}
-                    <a href="mailto:info@capsule.style">info@capsule.style</a>
+                    <a href="mailto:info@stilist.ai">info@stilist.ai</a>
                 </p>
             </div>
         </footer>
