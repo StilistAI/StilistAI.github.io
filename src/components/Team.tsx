@@ -18,9 +18,6 @@ function Team() {
             </div>
             <div className='team-members-container pt-32 mt-0 mb-0' id='team'>
                 <h1 className="modal-title">Meet Our Team</h1>
-                <p>
-                    "Algoritma Arkadaşları"
-                </p>
                 <div className='team-card-holder-col1'>
                     {teamMembers.slice(0, 3).map((member, index) => {
                         return (
