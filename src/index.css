@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-color: #AD8CE3;
+    --red-color: #860311;
+}
+
+.stylish-text {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Playfair Display, serif;
+}

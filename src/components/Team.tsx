@@ -5,7 +5,6 @@ import TeamCard from './TeamCard';
 function Team() {
     const teamMembers = [
         { name: 'Ali Emir Güzey', role: 'Backend & Infrastructure', image: 'aliemir', link: 'https://www.linkedin.com/in/ali-guzey' },
-        { name: 'Alp Afyonluoğlu', role: 'Machine Learning', image: 'alp', link: 'https://www.linkedin.com/in/alpafyonluoglu' },
         { name: 'Ceren Akyar', role: 'UI/UX Design & Frontend', image: 'ceren', link: 'https://www.linkedin.com/in/ceren-akyar-a477911b7' },
         { name: 'Mehmet Kağan İlbak', role: 'Machine Learning', image: 'kagan', link: 'https://www.linkedin.com/in/kaganilbak' },];
 
@@ -18,25 +17,19 @@ function Team() {
                 <img src={TeamBackground} alt="" className='team-background-img'/>
             </div>
             <div className='team-members-container pt-32 mt-0 mb-0' id='team'>
-                <h1 className="modal-title">MEET OUR TEAM</h1>
+                <h1 className="modal-title">Meet Our Team</h1>
                 <p>
-                    "ALGORİTMA ARKADAŞLARI"
+                    "Algoritma Arkadaşları"
                 </p>
-                <div className='team-card-holder-col2'>
-                    {teamMembers.slice(0, 2).map((member, index) => {
+                <div className='team-card-holder-col1'>
+                    {teamMembers.slice(0, 3).map((member, index) => {
                         return (
                             <TeamCard key={index} name={member.name} role={member.role} image={member.image} link={member.link} />
                         );
                     })}
                 </div>
-                <div className='team-card-holder-col2'>
-                    {teamMembers.slice(2, 4).map((member, index) => {
-                        return (
-                            <TeamCard key={index} name={member.name} role={member.role} image={member.image} link={member.link} />
-                        );
-                    })}
-                </div>
-                <h1 className="modal-title mb-8">OUR ADVISORS</h1>
+
+                <h1 className="modal-title mb-8">Our Advisors</h1>
                 <div className=''>
                     {advisors.map((member, index) => {
                         return (

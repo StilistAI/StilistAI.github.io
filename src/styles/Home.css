@@ -62,8 +62,8 @@
     font-size: 100px;
     font-weight: 600;
     padding: 0;
-    margin: 0;
     line-height: 100px;
+    margin-left: 5px;
 }
 .secondary-heading
 {
@@ -78,7 +78,7 @@
 .primary-p {
     color: #100007;
     font-family: Karla, sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     margin: 10px 10px;
     width: 80%;
@@ -86,9 +86,9 @@
 
 .red-line {
     width: 80%;
-    height: 8px; /* Thickness of the line */
-    background-color: #860311;
-    margin: 20px 20px 20px 10px;
+    height: 8px;
+    background-color: var(--red-color);
+    margin: 10px 20px 10px 10px;
 }
 
 /* make responsive for 1250 px */
